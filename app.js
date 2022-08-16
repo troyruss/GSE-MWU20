@@ -45,9 +45,16 @@ outputs episode # with
    MWU phrase, 
    and the total # of that phrase in the ep*/
 for (let episode in episodeObject) {
+  console.log(episode)
   for (let i = 0; i < mwu20.length; i++) {
     let word = mwu20[i];
     let total = episodeObject[episode].toLowerCase().split(mwu20[i]).length - 1;
-    console.log(`${episode} - ${i +1}. ${word}: ${total}`)
+    console.log(`   ${i +1}. ${word}: ${total}`)
   }
 }
+
+
+// // join episode string to remove spaces, seems regex works for MWUs and we get accurate count
+// let test = "I pointed out that he was pointing out the problem with the point out."
+// splitted = test.split(" ")
+// splitted.join("").split(/pointout|pointedout|pointingout/).length -1
