@@ -17,17 +17,37 @@ const ep793 = "Did you get the photos of the shirts I sent? Uh, yeah… looking 
 ep793.toLowerCase().split("as well").length - 1
 
 
-// testing how many of a letter in an object
+// // testing how many of a letter in an object
 // let i = 0
 // for (let key in obby) {
 //     console.log(key[i])
 //     i++
 // }
 
+// // Iterating through episodeObject
+// for (let episode in episodeObject) {
+//   console.log(episodeObject[episode])
+// }
+
 const mwu20 = ["as well", "years old", "years ago", "all right", "so much", "come up with", "right now", "come back", "come out", "focus on", "high school", "come in", "in order", "in addition", "no longer", "pick up", "go back to", "very much", "pointed out", "know how"];
 
-for (let i = 0; i < mwu20.length; i++) {
-  let word = mwu20[i];
-  let total = episodeObject.ep793.toLowerCase().split(mwu20[i]).length - 1;
-  console.log(`${i +1}. ${word}: ${total}`)
+// for (let i = 0; i < mwu20.length; i++) {
+//   let word = mwu20[i];
+//   let total = episodeObject.ep793.toLowerCase().split(mwu20[i]).length - 1;
+//   console.log(`${i +1}. ${word}: ${total}`)
+// }
+
+
+/* loops through episode object, 
+then loops through MultiWordUnit top 20, 
+outputs episode # with
+   MWU ranking, 
+   MWU phrase, 
+   and the total # of that phrase in the ep*/
+for (let episode in episodeObject) {
+  for (let i = 0; i < mwu20.length; i++) {
+    let word = mwu20[i];
+    let total = episodeObject[episode].toLowerCase().split(mwu20[i]).length - 1;
+    console.log(`${episode} - ${i +1}. ${word}: ${total}`)
+  }
 }
