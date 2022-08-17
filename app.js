@@ -29,7 +29,7 @@ ep793.toLowerCase().split("as well").length - 1
 //   console.log(episodeObject[episode])
 // }
 
-const mwu20 = ["as well", "years old", "years ago", "all right", "so much", "come up with", "right now", "come back", "come out", "focus on", "high school", "come in", "in order", "in addition", "no longer", "pick up", "go back to", "very much", "pointed out", "know how"];
+const mwu20 = ["as well", "years old", "years ago", "all right", "so much", "come up with", "right now", "come back", "come out", "focus on", "high school", "come in", "in order", "in addition", "no longer", "pick up", "go back to", "very much", /point out|pointed out|pointing out/, "know how"];
 
 // for (let i = 0; i < mwu20.length; i++) {
 //   let word = mwu20[i];
