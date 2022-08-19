@@ -43,6 +43,8 @@ const mwu20 = ["as well", "years old", "years ago", /all right|alright/, "so muc
 //   console.log(`${i +1}. ${word}: ${total}`)
 // }
 
+// Frequency counter for total MWUs
+let freqCounter = {}
 
 /* loops through episode object, 
 then loops through MultiWordUnit top 20, 
@@ -56,6 +58,7 @@ for (let episode in episodeObject) {
     let word = mwu20[i];
     let total = episodeObject[episode].toLowerCase().split(mwu20[i]).length - 1;
     console.log(`   ${i +1}. ${word}: ${total}`)
+    freqCounter[word] = freqCounter[word] + total || total;
   }
 }
 
