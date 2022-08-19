@@ -60,6 +60,9 @@ for (let episode in episodeObject) {
     console.log(`   ${i +1}. ${word}: ${total}`)
     freqCounter[word] = freqCounter[word] + total || total;
   }
+  for (let freq in freqCounter) {
+    console.log(`${freq}: ${freqCounter[freq]}`)
+  }
 }
 
 
