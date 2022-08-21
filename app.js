@@ -51,7 +51,7 @@ const episodeObject = {
 // }
 
 // Array of MWU20 -- each item is string or regex (for MWUs with various inflections)
-const mwu20 = ["as well", "years old", "years ago", /all right|alright/, "so much", /come up with|came up with|coming up with/, "right now", /come back|came back|coming back/, /come out|came out|coming out/, /focus on|focused on|focusing on/, "high school", /come in|came in|coming in/, "in order", "in addition", "no longer", /pick up|picked up|picking up/, /go back to|went back to|going back to/, "very much", /point out|pointed out|pointing out/, /know how|knew how|knowing how/];
+const mwu20 = ["as well", "years old", "years ago", /all right|alright/, "so much", /come up with|came up with|coming up with/, "right now", /come back|came back|coming back/, /come out|came out|coming out/, /focus on|focused on|focusing on/, "high school", /come in|came in|coming in/, "in order", "in addition", "no longer", /pick up|picked up|picking up/, /go back to|went back to|going back to|gone back to/, "very much", /point out|pointed out|pointing out/, /know how|knew how|knowing how/];
 
 // for (let i = 0; i < mwu20.length; i++) {
 //   let word = mwu20[i];
